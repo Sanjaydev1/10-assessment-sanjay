@@ -18,4 +18,4 @@ jobs:
           python-version: '3.9'
 
       - name: Compile Python file
-        run: python -m py_compile app.py
+        run: python -m py_compile App.py
