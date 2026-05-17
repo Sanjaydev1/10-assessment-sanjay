@@ -1,12 +1,23 @@
-import logging
+import argparse
 
-logging.basicConfig(
-    level=logging.INFO,
-    format="%(asctime)s - %(levelname)s - %(message)s"
+parser = argparse.ArgumentParser(
+    description="Welcome utility for Agentic AI Enablement"
 )
 
-logger = logging.getLogger(__name__)
+parser.add_argument(
+    "--name",
+    required=True,
+    help="Name of the user"
+)
 
-logger.info("Application started")
+parser.add_argument(
+    "--role",
+    required=True,
+    help="Role of the user"
+)
 
-print("Hello from L0 Assessment")
+args = parser.parse_args()
+
+print(
+    f"Hello {args.name}, welcome to Agentic AI Enablement as a {args.role}."
+)
