@@ -9,4 +9,4 @@ logger = logging.getLogger(__name__)
 
 logger.info("Application started")
 
-print("Hello from L0 Assessment"
+print("Hello from L0 Assessment")
